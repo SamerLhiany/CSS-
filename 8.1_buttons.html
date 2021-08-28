@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: rgb(146, 146, 190);
+
+        }
+
+        /* a:visited {
+            color: red;
+        }*/
+
+
+        /*button styling*/
+
+        .container {    
+            margin: auto;
+            width: 25vw;
+            /* height: 100vh; */
+
+        }
+
+        .large {
+            font-size: 16px;
+            padding: 10px 40px;
+        }
+
+        .meduim {
+            padding: 6px 32px;
+        }
+
+        .small {
+            padding: 2px 15px;
+        }
+
+       .line1 , .line2 , .line3 , .line4 {
+            margin-top: 50px;
+        }
+
+        .line2 button{
+            border-radius: 20px;
+        }
+
+        .line3 button {
+            background: transparent;
+            border: solid 1px;
+        }
+        
+        .line4 button {
+            background: transparent;
+            border-radius: 20px;
+            border: solid 1px;
+        }
+
+        .line1 .small {
+            background:blue;
+        }
+        .line1 .small:hover {
+            background:rgb(84, 84, 255);
+        }
+
+        .line1 .meduim {
+            background:red;
+        }
+        .line1 .meduim:hover {
+            background:rgb(255, 158, 158);
+        }
+
+        .line1 .large {
+            background:green;
+        }
+        .line1 .large:hover {
+            background:rgb(162, 255, 162);
+        }
+
+        .line2 .small {
+            background: grey;
+        }
+        .line2 .small:hover {
+            background: rgb(185, 185, 185);
+        }
+        .line2 .meduim {
+            background: yellow;
+        }
+        .line2 .meduim:hover {
+            background: rgb(255, 255, 119);
+        }
+        .line2 .large {
+            background: orange;
+        }
+        .line2 .large:hover {
+            background: rgb(255, 206, 114);
+        }
+
+        .line3 .small {
+            border-color: blue ;
+        }
+        .line3 .small:hover {
+            background: blue;
+        }
+        .line3 .meduim {
+            border-color: red ;
+            
+        }
+        .line3 .meduim:hover {
+            background: red;
+        }
+        .line3 .large {
+            border-color: green ;
+            
+        }
+        .line3 .large:hover {
+            background: green;
+        }
+
+        .line4 .small {
+            border-color: gray ;
+        }
+        .line4 .small:hover {
+            background: gray;
+        }
+        .line4 .meduim {
+            border-color: yellow ;
+            
+        }
+        .line4 .meduim:hover {
+            background: yellow;
+        }
+        .line4 .large {
+            border-color: orange ;
+            
+        }
+        .line4 .large:hover {
+            background: orange;
+        }
+        
+        .container p{
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            margin-right: 150px;
+            
+            
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+       <p>Flat</p>
+        <div class="line1">
+        <button class="large">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+            class=" meduim">Clear</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="small">Submit</button>
+        </div>
+       
+        <p>Round</p>
+        <div class="line2">
+        <button class="large">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+            class="meduim">Clear</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="small">Submit</button>
+        </div>
+       
+        <p>Flat Ghost</p>
+        <div class="line3">
+        <button class="large">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+            class="meduim">Clear</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="small">Submit</button>
+        </div>
+       
+        <p>Round ghost</p>
+        <div class="line4">
+        <button class="large">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+            class="meduim">Clear</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="small">Submit</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
