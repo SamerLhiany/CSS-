@@ -1,0 +1,50 @@
+.container { 
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background: rgb(223, 230, 233);
+    border: rgb(198, 198, 214) 2px solid;
+}
+
+.container .APPLEEEDS {
+    color: rgb(81, 105, 138);
+    font-size: 16PX;
+    font-weight: 800;
+    margin: 10px;
+    text-align: center;
+}
+
+.small-container {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.small-container a {
+
+    color: rgb(81, 105, 138);
+    font-size: 13px;
+    text-decoration: none;
+    padding: 0.8rem 0.4rem;
+}
+
+.small-container a:hover {
+    background: white;
+    border-radius: 20%;
+    
+}
+
+@media(min-width: 0px) and (max-width: 576px) {
+    body {
+      
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .small-container {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+  }

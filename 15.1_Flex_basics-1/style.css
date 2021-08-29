@@ -1,0 +1,34 @@
+.container { 
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background: burlywood;
+    height: 50vh;
+    
+
+}
+
+.container div {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.first {
+    height:50px ;
+    width: 50px ;
+    background-color: green;
+    
+}
+
+.second {
+    height:50px ;
+    width: 50px ;
+    background-color:blue;
+}
+
+.thred {
+    height:50px ;
+    width: 50px ;
+    background-color: red;
+}

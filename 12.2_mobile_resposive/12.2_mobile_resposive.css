@@ -1,0 +1,80 @@
+p {
+    background: black;
+    color: white;
+    
+}
+
+#box {
+    width: 24%;
+    display:  display: inline-block;
+    
+}
+
+
+/* smartphone */
+@media(max-width: 500px) {
+    body {
+      
+    }
+    #box {
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        
+    }
+  }
+
+/* Tablet */
+@media(min-width: 501px) and (max-width: 768px) {
+    body {
+      
+    }
+    #box {
+        display: inline-block;
+        width: 40%;
+        text-align: center;
+        margin: auto;
+    }
+  }
+
+/* Normal */
+@media(min-width: 768px) and (max-width: 1200px) {
+    body {
+      
+    }
+    #box {
+        display:inline-block;
+        width: 30%;
+        text-align: center;
+        margin: 1px auto;
+        
+    }
+  }
+/* Widescreen */
+@media(min-width: 1201px)  {
+    body {
+      
+    }
+    #box {
+        display:inline-block;
+        width: 24%;
+        text-align: center;
+        
+        
+    }
+  }
+
+ /*landscape
+@media(max-width: 500px)  {
+    body {
+     
+    }
+    #box p {
+        display: block;
+        
+        
+    }
+  } */
+
+  

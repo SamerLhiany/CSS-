@@ -1,0 +1,69 @@
+
+
+h1 {
+    padding-top: 300px;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    color: white;
+    text-align: center;
+} 
+
+/* smartphone */
+@media(max-width: 500px) {
+    body {
+      background:bred;
+    }
+    #smartphone h1 {
+        display: block;
+        font-size: 20px;
+    }
+  }
+
+/* Tablet */
+@media(min-width: 501px) and (max-width: 768px) {
+    body {
+      background: blue;
+    }
+    #tablet h1 {
+        display: block;
+        font-size: 40px;
+    }
+  }
+
+/* Normal */
+@media(min-width: 768px) and (max-width: 1200px) {
+    body {
+      background: green;
+    }
+    #normal h1 {
+        display: block;
+        font-size: 60px;
+        
+    }
+  }
+/* Widescreen */
+@media(min-width: 1201px)  {
+    body {
+      background: black;
+    }
+    #widescreen h1 {
+        display: block;
+        font-size: 80px;
+        
+    }
+  }
+
+/* landscape
+@media(max-width: 500px)  {
+    body {
+      background: black;
+    }
+    #samer h1 {
+        display: block;
+        font-size: 60px;
+        
+    }
+  } */
+
+  

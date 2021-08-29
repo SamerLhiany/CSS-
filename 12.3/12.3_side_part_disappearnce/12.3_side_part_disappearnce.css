@@ -1,0 +1,79 @@
+
+/*CSS Reset*/
+* {
+    margin: auto;
+    box-sizing: border-box;
+    overflow:auto;
+}
+
+.container {
+    width: 1920px;
+   
+
+}
+
+.clr {
+    clear: both;
+}
+
+.BOX-1 {
+    background: orange;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.BOX-2 {
+    background: green;
+    float: left;
+    width: 39.8%;
+    height: 350px;
+    text-align:left;
+    
+    
+
+}
+
+.BOX-3 {
+    background: purple;
+    float: right;
+    margin: auto;
+    width: 60%;
+    height: 350px;
+    text-align:right;
+    
+}
+
+.BOX-4 {
+    background: BLUE;
+    text-align: center;
+    height: 50px;
+    margin-top: 4px;
+}
+
+
+/* smartphone */
+@media(min-width: 0px) and (max-width: 1000px) {
+    body {
+      
+    }
+    .container {
+        width: 100vw;
+       
+       
+    
+    }
+    .BOX-3 { 
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .BOX-2 { 
+        display: none;
+        width: 0;
+    }
+    
+  }
+
+
+
