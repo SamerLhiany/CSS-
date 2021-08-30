@@ -1,0 +1,103 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+ div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 3px black solid;
+    height:100px ;
+    width: 300px;
+    font-size: 20px;
+    flex: 0 0 26%;
+    overflow: hidden;
+}
+
+.box1::after {
+    content: 'YEAH!';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height:100%;
+    width:100%;
+    background: red; 
+    transform: translateY(-101%);
+    transition: all 1s;
+   
+}
+
+.box1:hover::after {
+    transform: translateY(0);
+}
+
+.box2::after {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height:100%;
+    width:100%;
+    background: black; 
+    transform: translateX(-101%);
+    transition: all 1s;
+    z-index: -1;
+    
+
+}
+
+
+.box2:hover{
+    color: white;
+    transition: all 1s;
+    
+}
+.box2:hover::after {
+    transform: translateX(0);
+    
+}
+
+.box3::after {
+    content: '';
+    background: yellow;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg) translate(-182px,83px) ;
+    transition: all 1s;
+    z-index: -2;
+    
+}
+
+.box3:hover::after{
+ transform: rotate(180deg);
+}
+
+.box4::after {
+    content: 'Scale & Opacity';
+    position: absolute;
+    background: black;
+    height: 100%;
+    width: 100%;
+    transform: scale(2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.box4:hover:after {
+    opacity: 1;
+    transform: scale(1);
+}

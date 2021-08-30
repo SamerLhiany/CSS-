@@ -1,0 +1,46 @@
+p {
+    margin-top: 5%;
+}
+
+
+
+[data-tooltip] {
+    position: relative;
+    cursor: default;
+
+}
+
+[data-tooltip]::after {
+    font-size: 10px;
+    position: absolute;
+    width: 100px;
+    left: calc(50% - 50px);
+    bottom: 115%;
+    text-align: center;
+    content:attr(data-tooltip);
+    box-sizing: border-box;
+    color: black;
+    background: yellow;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    border-radius: 20%;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(10px);
+    transition:opacity 0.3s , transform 0.2s ;
+
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    visibility:visible;
+    transform: translateY(0);
+
+}
+
+span:hover {
+    color: blue;
+    
+}
+
+

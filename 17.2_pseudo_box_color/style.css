@@ -1,0 +1,31 @@
+
+
+  #demobox{
+    position: relative;
+    /* border: 1px solid black ; */
+    background: yellow;
+    width: 10vw;
+    height: 20vh;
+  }
+    #demobox{
+      position: absolute;
+      /* border: 1px solid black ; */
+      background: yellow;
+      width: 10vw;
+      height: 20vh;
+      left: 20px;
+
+  }
+  #demobox::after {
+    content:"";
+    position: absolute;
+    /* border: 1px solid black ; */
+    background: red;
+    width: 100%;
+    height: 100%;
+    left: 10vw;
+    /* top: ; */
+  }
+
+
+

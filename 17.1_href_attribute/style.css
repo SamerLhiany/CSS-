@@ -1,0 +1,8 @@
+a::after {
+    content: "(http://www.appleseeds.org.il/)";
+  }
+
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8rem;
+  }

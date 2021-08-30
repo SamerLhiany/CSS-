@@ -1,0 +1,30 @@
+.contaier {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px
+
+}
+
+.box1 {
+
+    width: 100px;
+    height: 100px;
+    background: red;
+    
+}
+
+.box1::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: purple;
+  transform: translateX(100px);
+  transition: all 1s;
+}
+
+.box1:hover::after {
+transform: translateX(0);
+background: green;
+
+}

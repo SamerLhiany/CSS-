@@ -1,0 +1,28 @@
+
+    #demobox{
+      position: relative;
+      background: purple;
+      width: 10vw;
+      height: 20vh;
+     
+
+  }
+  #demobox::after {
+    content:"";
+    position: absolute;
+    background: red;
+    width: 10vw;
+    height: 20vh;
+    left: 10vw;
+   
+  }
+
+#demobox:hover{
+  content:"";
+  position: absolute;
+  background: blue;
+  width: 10vw;
+  height: 20vh;
+  
+}
+

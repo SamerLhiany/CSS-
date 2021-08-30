@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    font-size: 10px;
+    font-size: calc(1px + 6 * ((100vw -320px) / 600));
+}
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --rgb:rgb(223, 230, 233);
+    --dark-color: gray;
+    --color: yellow;
+    --rgb-container: rgb(81, 105, 138);
+    --boarder: rgb(198, 198, 214) 2px solid;
+
+    
+
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: ;
+}
+
+img {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    width: 30vw ;
+    height: 30vh;
+    margin:auto;
+
+}
+
+p {
+    font-family: - ;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.container { 
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background: var(--rgb);
+    border: var(--boarder);
+}
+
+.container .APPLEEEDS {
+    color: var(--rgb-container);
+    font-size: 16PX;
+    font-weight: 800;
+    margin: 10px;
+    text-align: center;
+}
+
+.small-container {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.small-container a {
+
+    color: var(--rgb-container);
+    font-size: 13px;
+    text-decoration: none;
+    padding: 0.8rem 0.4rem;
+}
+
+.small-container a:hover {
+    background: var(--white);
+    border-radius: 20%;
+    
+}
+
+@media(min-width: 0px) and (max-width: 576px) {
+    body {
+      
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .small-container {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+  }
