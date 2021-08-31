@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "img1 img1 img2 img2 img2 img3 img4 img4"
+    "img1 img1 img2 img2 img2 img3 img4 img4"
+    "img5 img5 img2 img2 img2 img6 img6 img7"
+    "img5 img5 img8 img8 img9 img6 img6 img7"
+    "img5 img5 img8 img8 img10 img10 img10 img7"
+    "img11 img12 img12 img13 img10 img10 img10 img14"
+    "img11 img12 img12 img13 img10 img10 img10 img14";
+    gap: 1rem;
+    
+  }
+
+.img img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.img img:hover {
+   transform:scale(1.1);
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.img7 {
+    grid-area: img7;
+}
+
+.img8 {
+    grid-area: img8;
+}
+
+.img9 {
+    grid-area: img9;
+}
+
+.img10 {
+    grid-area: img10;
+}
+
+.img11 {
+    grid-area: img11;
+}
+
+.img12 {
+    grid-area: img12;
+}
+
+.img13 {
+    grid-area: img13;
+}
+
+.img14 {
+    grid-area: img14;
+}
+
+
+@media(max-width:600px) {
+    .grid{
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+        "img8"
+        "img9"
+        "img10"
+        "img11"
+        "img12"
+        "img13"
+        "img14";
+        
+    }
+}
