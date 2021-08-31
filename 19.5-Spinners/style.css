@@ -1,0 +1,60 @@
+body {
+    background: #131313;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dot {
+    width: 100px;
+    height: 100px;
+    background: teal;
+    border-radius: 100%;
+    margin: 0 10px;
+  }
+  .dot1 {
+    animation: jump 2s infinite;
+  }
+  .dot2 {
+    animation: jump 2s infinite 0.3s;
+  }
+  .dot3 {
+    animation: jump 2s infinite 0.6s;
+  }
+  
+  .dot4 {
+      margin-left:  500px;
+    animation: jump 2s infinite 0.6s;
+  }
+  
+  .dot5 {
+    
+    animation: jump 2s infinite 0.6s;
+  }
+  
+  .dot6 {
+    
+    animation: jump 2s infinite 0.6s;
+  }
+  
+  @keyframes jump {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.75;
+      background: red;
+    }
+    50% {
+      opacity: 0.5;
+      background: yellow;
+    }
+    75% {
+      opacity: 0.75;
+      background: green;
+    }
+    100% {
+      opacity: 1;
+      background: green;
+    }
+  }
